@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="testcase.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="AddRemoveElmTest(failed)">
+    <classes>
+      <class name="testcase.AddRemoveElmTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="verifydeleteElmClick"/>
+          <include name="driverSetup"/>
+        </methods>
+      </class> <!-- testcase.AddRemoveElmTest -->
+    </classes>
+  </test> <!-- AddRemoveElmTest(failed) -->
+  <test thread-count="2" parallel="tests" name="BrokenImagePageTest(failed)">
+    <classes>
+      <class name="testcase.BrokenImagePageTest">
+        <methods>
+          <include name="verifyBrokenImages"/>
+          <include name="closeDriver"/>
+          <include name="driverSetup"/>
+        </methods>
+      </class> <!-- testcase.BrokenImagePageTest -->
+    </classes>
+  </test> <!-- BrokenImagePageTest(failed) -->
+  <test thread-count="2" parallel="tests" name="DragDropPageTest(failed)">
+    <classes>
+      <class name="testcase.DragDropPageTest">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="closeDriver"/>
+          <include name="verifydragDropElm"/>
+        </methods>
+      </class> <!-- testcase.DragDropPageTest -->
+    </classes>
+  </test> <!-- DragDropPageTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

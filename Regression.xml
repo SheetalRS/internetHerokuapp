@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2" >
+<listeners>
+   	
+   <listener class-name="testcase.TestListener"/>
+   </listeners>
+   
+   <test thread-count="1" name="AbTestPageTest">
+    <classes>
+            <class name="testcase.AbTestPageTest"/>
+    </classes>
+  </test>
+  
+   <test thread-count="1" name="LandPageTest">
+    <classes>
+            <class name="testcase.LandPageTest"/>
+    </classes>
+  </test>
+   <test thread-count="1" name="AddRemoveElmTest">
+    <classes>
+            <class name="testcase.AddRemoveElmTest"/>
+    </classes>
+  </test>
+  <test thread-count="1" name="ContextMenuPageTest">
+    <classes>
+            <class name="testcase.ContextMenuPageTest"/>
+    </classes>
+  </test>
+  
+   <test thread-count="1" name="CheckBoxesPageTest">
+    <classes>
+            <class name="testcase.CheckBoxesPageTest"/>
+    </classes>
+  </test>
+  
+    <test thread-count="1" name="BrokenImagePageTest">
+    <classes>
+            <class name="testcase.BrokenImagePageTest"/>
+    </classes>
+  </test>
+     <test thread-count="1" name="DisappearingElmPageTest">
+    <classes>
+            <class name="testcase.DisappearingElmPageTest"/>
+    </classes>
+  </test>
+  
+  
+   <test thread-count="1" name="DragDropPageTest">
+    <classes>
+            <class name="testcase.DragDropPageTest"/>
+    </classes>
+  </test>
+  
+   <test thread-count="1" name="DropDownTest">
+    <classes>
+            <class name="testcase.DropDownTest"/>
+    </classes>
+  </test>
+  
+  <test thread-count="1" name="DynamicCntrlsPageTest">
+    <classes>
+            <class name="testcase.DynamicCntrlsPageTest"/>
+    </classes>
+  </test>
+  
+    <test thread-count="1" name="DynamicLoadingPgTest">
+    <classes>
+            <class name="testcase.DynamicLoadingPgTest"/>
+    </classes>
+  </test>
+  
+  
+</suite> <!-- Suite -->

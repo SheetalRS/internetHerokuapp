@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" verbose="0">
+  <listeners>
+    <listener class-name="testcase.TestListener"/>
+  </listeners>
+  <test parallel="tests" name="AbTestPageTest(failed)">
+    <classes>
+      <class name="testcase.AbTestPageTest">
+        <methods>
+          <include name="verifyABTestControlText"/>
+          <include name="closeDriver"/>
+          <include name="driverSetup"/>
+        </methods>
+      </class> <!-- testcase.AbTestPageTest -->
+    </classes>
+  </test> <!-- AbTestPageTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
